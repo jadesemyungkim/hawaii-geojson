@@ -125,8 +125,8 @@ h2 {
 /* Flower Image CSS  */
 #flower-image {
     position: absolute;
-    right: -20px; /* Adjust as needed to show the desired portion of the image */
-    bottom: -20px; /* Adjust as needed to show the desired portion of the image */
+    right: 0px; /* Adjust as needed to show the desired portion of the image */
+    bottom: 0px; /* Adjust as needed to show the desired portion of the image */
     width: 200px; /* Adjust as needed */
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 3px #6b6b6b);
