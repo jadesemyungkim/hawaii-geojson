@@ -1,0 +1,89 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+            "id": "Hawaii Volcano National Park",
+            "prefer": 2
+        },
+        "geometry": {
+          "coordinates": [
+            -155.51960086623106,
+            19.579145713450444
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+            "id": "Kaloko-Honokohau Park",
+            "prefer": 1
+        },
+        "geometry": {
+          "coordinates": [
+            -157.66046307421394,
+            21.3104854011778
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+            "id": "Haleakala",
+            "prefer": 5
+        },
+        "geometry": {
+          "coordinates": [
+            -157.7096516007376,
+            21.25916507493899
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+            "id": "Pearl Harbor",
+            "prefer": 3
+        },
+        "geometry": {
+          "coordinates": [
+            -157.96285546853167,
+            21.363555961692867
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+            "id": "Sea-life Park",
+            "prefer": 4
+        },
+        "geometry": {
+          "coordinates": [
+            -156.16000589609934,
+            20.709340979182485
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+            "id": "Spitting Cave",
+            "prefer": 6
+        },
+        "geometry": {
+          "coordinates": [
+            -156.02569625531916,
+            19.678838386664935
+          ],
+          "type": "Point"
+        }
+      }
+    ]
+  }

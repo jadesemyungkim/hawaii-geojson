@@ -1,0 +1,149 @@
+
+
+/* CSS */
+.button-29 {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+#container {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    align-items: stretch;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+}
+
+/* Sidebar */
+.side.hidden {
+    transform: translateX(-90%);
+}
+.side {
+    transition: transform 0.5s ease-in-out; /* This enables the slide effect. Adjust duration as needed. */
+    transform: translateX(0); /* By default, the sidebar is visible */
+    background-color: rgb(48, 48, 48);
+}
+
+@media (max-width: 1024px) {
+    .side {
+        transform: translateX(-90%); /* When the viewport is 1024px or less, the sidebar slides out of view */
+    }
+}
+
+
+
+#side-panel {
+    flex-basis: 500px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+    z-index: 9999;
+    position: absolute; 
+    top: 26%;
+}
+
+
+#map {
+    flex-grow: 1;
+}
+
+button {
+    margin-bottom: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 0px solid #ddd;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #424242;
+}
+h2 {
+    text-align: center;
+}
+.button-container {
+    text-align: center;
+}
+
+/* Flower Image CSS  */
+#flower-image {
+    position: absolute;
+    right: -20px; /* Adjust as needed to show the desired portion of the image */
+    bottom: -20px; /* Adjust as needed to show the desired portion of the image */
+    width: 200px; /* Adjust as needed */
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 3px #6b6b6b);
+    height: auto;
+    z-index: 9998; /* Lower than the sidebar but higher than the map */
+}
+
+
+
+#side-handle {
+    position: absolute;
+    top: 0;
+    right: -30px; /* Adjust this to position the handle */
+    width: 30px;  /* Adjust this to set the size of the handle */
+    height: 30px; /* Adjust this to set the size of the handle */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 30px; /* Adjust this to vertically center the handle's text */
+    cursor: pointer;
+}
